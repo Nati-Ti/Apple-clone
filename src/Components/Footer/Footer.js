@@ -1,7 +1,20 @@
 import React from 'react'
 import flag from '../../commonResource/images/icons/16.png'
+import FooterProp from './FooterProp'
 
 function Footer() {
+	const shop = ['Mac', 'iPad', 'iPhone', 'Watch', 'TV', 'Music', 'AirPods', 'HomePod', 'iPod touch',   'Accessories', 'Gift Cards'];
+	const services = ['Apple Music', 'Apple News+', 'Apple TV+', 'Apple Arcade', 'Apple Card', 'iCloud'];
+	const account = ['Manage Your Apple ID', 'Apple Store Account', 'iCloud.com'];
+	const appleStore = ['Find a Store', 'Genius Bar', 'Today at Apple', 'Apple Camp', 'Field Trip', 'Apple Store App', 'Refurbished and Clearance', 'Financing', 'Apple Trade In', 'Order Status', 'Shopping Help'];
+	const business = ['Apple and Business', 'Shop for Business'];
+	const education = ['Apple and Education', 'Shop for College'];
+	const healthCare = ['Manage Your Apple ID', 'Apple Store Account', 'iCloud.com'];
+	const government = ['Apple and Education', 'Shop for College'];
+	const appleValues = ['Find a Store', 'Genius Bar', 'Today at Apple', 'Apple Camp', 'Field Trip', 'Apple Store App'];
+	const aboutApple = ['Find a Store', 'Genius Bar', 'Today at Apple', 'Apple Camp', 'Field Trip', 'Apple Store App'];
+	const legalSites = ['Privacy Policy', 'Terms of Use', 'Sales and Refunds', 'Legal', 'Site Map'];
+	
 	return (
 		<footer className="footer-wrapper">
 			<div className="container">
@@ -38,116 +51,48 @@ function Footer() {
 		  		<div className="footer-links-wrapper row">
 					<div className="links-wrapper-1 col-sm-12 col-md">
 						<h3>Shop and Learn</h3>
-						<ul>
-							<li><a href="#">Mac</a></li>
-							<li><a href="#">iPad</a></li>
-							<li><a href="#">iPhone</a></li>
-							<li><a href="#">Watch</a></li>
-							<li><a href="#">TV</a></li>
-							<li><a href="#">Music</a></li>
-							<li><a href="#">AirPods</a></li>
-							<li><a href="#">HomePod</a></li>
-							<li><a href="#">iPod touch</a></li>
-							<li><a href="#">Accessories</a></li>
-							<li><a href="#">Gift Cards</a></li>
-						</ul>
+						<FooterProp links={shop} />
 					</div>
 					<div className="links-wrapper-2 col-sm-12 col-md">
 						<h3>Services</h3>
-						<ul>
-							<li><a href="#">Apple Music</a></li>
-							<li><a href="#">Apple News+</a></li>
-							<li><a href="#">Apple TV+</a></li>
-							<li><a href="#">Apple Arcade</a></li>
-							<li><a href="#">Apple Card</a></li>
-							<li><a href="#">iCloud</a></li>
-						</ul>
+						<FooterProp links={services} />
 						<h3>Account</h3>
-						<ul>
-							<li><a href="#">Manage Your Apple ID</a></li>
-							<li><a href="#">Apple Store Account</a></li>
-							<li><a href="#">iCloud.com</a></li>
-						</ul>
+						<FooterProp links={account} />
 					</div>
 					<div className="links-wrapper-3 col-sm-12 col-md">
 						<h3>Apple Store</h3>
-						<ul>
-							<li><a href="#">Find a Store</a></li>
-							<li><a href="#">Genius Bar</a></li>
-							<li><a href="#">Today at Apple</a></li>
-							<li><a href="#">Apple Camp</a></li>
-							<li><a href="#">Field Trip</a></li>
-							<li><a href="#">Apple Store App</a></li>
-							<li><a href="#">Refurbished and Clearance</a></li>
-							<li><a href="#">Financing</a></li>
-							<li><a href="#">Apple Trade In</a></li>
-							<li><a href="#">Order Status</a></li>
-							<li><a href="#">Shopping Help</a></li>
-						</ul>
+						<FooterProp links={appleStore} />
 					</div>
 					<div className="links-wrapper-4 col-sm-12 col-md">
 						<h3>For Business</h3>
-						<ul>
-						<li><a href="#">Apple and Business</a></li>
-						<li><a href="#">Shop for Business</a></li>
-						</ul>
+						<FooterProp links={business} />
 						<h3>For Education</h3>
-						<ul>
-						<li><a href="#">Apple and Education</a></li>
-						<li><a href="#">Shop for College</a></li>
-						</ul>
+						<FooterProp links={education} />
 						<h3>For Healthcare</h3>
-						<ul>
-						<li><a href="#">Manage Your Apple ID</a></li>
-						<li><a href="#">Apple Store Account</a></li>
-						<li><a href="#">iCloud.com</a></li>
-						</ul>
+						<FooterProp links={healthCare} />
 						<h3>For Government</h3>
-						<ul>
-						<li><a href="#">Apple and Education</a></li>
-						<li><a href="#">Shop for College</a></li>
-						</ul>
+						<FooterProp links={government} />
 					</div>
-					<div className="links-wrapper-5 col-sm-12 col-md">
+					<div className="links-wrapper-5 col-sm-12 col-md">					
 						<h3>Apple Values</h3>
-						<ul>
-							<li><a href="#">Find a Store</a></li>
-							<li><a href="#">Genius Bar</a></li>
-							<li><a href="#">Today at Apple</a></li>
-							<li><a href="#">Apple Camp</a></li>
-							<li><a href="#">Field Trip</a></li>
-							<li><a href="#">Apple Store App</a></li>
-						</ul>
+						<FooterProp links={appleValues} />
 						<h3>About Apple</h3>
-						<ul>
-							<li><a href="#">Find a Store</a></li>
-							<li><a href="#">Genius Bar</a></li>
-							<li><a href="#">Today at Apple</a></li>
-							<li><a href="#">Apple Camp</a></li>
-							<li><a href="#">Field Trip</a></li>
-							<li><a href="#">Apple Store App</a></li>
-						</ul>
+						<FooterProp links={aboutApple} />						
 					</div>
 		        </div>
 				<div className="my-apple-wrapper">
 					More ways to shop: <a href="#">Find an Apple Store</a> or
-					<a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.
+					<a href="#"> other retailer</a> near you. Or call 1-800-MY-APPLE.
 				</div>
 				<div className="copyright-wrapper row">
 					<div className="copyright col-sm-12 order-2 col-md-8 order-md-1 col-lg-4 order-lg-1 ">
 					Copyright &copy; 2020 Apple Inc. All rights reserved.
 					</div>
 					<div className="footer-links-terms col-sm-12 order-3 col-lg-6 order-lg-2">
-						<ul>
-							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">Terms of Use</a></li>
-							<li><a href="#">Sales and Refunds</a></li>
-							<li><a href="#">Legal</a></li>
-							<li><a href="#">Site Map</a></li>
-						</ul>
+						<FooterProp links={legalSites} />
 					</div>
 					<div className="footer-country col-sm-12 order-1 col-md-4 order-md-2 text-md-right col-lg-2 order-lg-3">
-					<div className="flag-wrapper"><img src={flag} /></div>
+					<div className="flag-wrapper"><img src={flag} alt='country flag' /></div>
 					<div className="footer-country-name">United States</div>
 				</div>
 		  	    </div>
