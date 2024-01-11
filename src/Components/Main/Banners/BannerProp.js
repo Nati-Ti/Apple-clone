@@ -19,8 +19,8 @@ class BannerProp extends Component {
         </div>
         <div className="links-wrapper">
             <ul className="d-flex list-unstyled">
-                <li className="learn-link2"><a href={this.props.linkUrl}>Learn more</a></li>
-                <li><a href={this.props.linkUrlBuy}>Buy</a></li>
+                <li className="learn-link2"><a href='#'>Learn more</a></li>
+                <li><a href='#'>Buy</a></li>
             </ul>
         </div>
     </div>

@@ -46,10 +46,10 @@ class SectionProp extends Component {
             <div className="leftside-links links-wrapper py-2">
               <ul className="d-flex list-unstyled">
                 <li className="leftside-learn">
-                  <a href={this.props.leftLinkMore}>Learn more</a>
+                  <a href='#'>Learn more</a>
                 </li>
                 <li>
-                  <a href={this.props.leftLinkBuy}>Buy</a>
+                  <a href='#'>Buy</a>
                 </li>
               </ul>
             </div>
@@ -85,10 +85,10 @@ class SectionProp extends Component {
             <div className="rightside-links links-wrapper">
               <ul className="d-flex list-unstyled">
                 <li className="rightside-learn">
-                  <a href={this.props.rightLinkMore}>Learn more</a>
+                  <a href='#'>Learn more</a>
                 </li>
                 <li>
-                  <a href={this.props.rightLinkBuy}>Buy</a>
+                  <a href='#'>Buy</a>
                 </li>
               </ul>
             </div>
