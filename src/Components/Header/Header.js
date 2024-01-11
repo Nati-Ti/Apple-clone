@@ -23,19 +23,19 @@ class Header extends Component {
 
           <div className="navbar-collapse collapse">
             <ul className="navbar-nav nav-justified w-100 nav-fill">
-              <HeaderProp linkUrl="/mac/" linkName="Mac" />
-              <HeaderProp linkUrl="/iphone/" linkName="iPhone" />
-              <HeaderProp linkUrl="/ipad/" linkName="ipad" />
-              <HeaderProp linkUrl="/watch/" linkName="watch" />
-              <HeaderProp linkUrl="/tv/" linkName="tv" />
-              <HeaderProp linkUrl="/Music/" linkName="Music" />
-              <HeaderProp linkUrl="/Support/" linkName="Support" />
+              <HeaderProp linkUrl="#" linkName="Mac" />
+              <HeaderProp linkUrl="#" linkName="iPhone" />
+              <HeaderProp linkUrl="#" linkName="ipad" />
+              <HeaderProp linkUrl="#" linkName="watch" />
+              <HeaderProp linkUrl="#" linkName="tv" />
+              <HeaderProp linkUrl="#" linkName="Music" />
+              <HeaderProp linkUrl="#" linkName="Support" />
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="/search/"
                   ><img src={Search} /></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/cart/"
+                <a className="nav-link js-scroll-trigger" href="#"
                   ><img src={Cart} /></a>
               </li>
             </ul>

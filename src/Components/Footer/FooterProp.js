@@ -5,7 +5,7 @@ class FooterProp extends Component {
     return (
         <ul>
             {this.props.links.map((link) => 
-            <li key={link}><a href={`/${link}`}>{link}</a></li>
+            <li key={link}><a href='#'>{link}</a></li>
             )}
             {/* the key attribute helps to identify each item in the list uniquely */}
         </ul>
