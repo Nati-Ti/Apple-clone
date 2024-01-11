@@ -10,7 +10,7 @@ function SectionOne() {
     return (
         <section>
             <SectionProp leftBackImg={watchImg} leftImg={watch} leftDescr="With the new Always-On Retina display.
-                    You've never seen a watch like this." leftLinkMore="/watch" leftLinkBuy="/Buy"
+                    " leftLinkMore="/watch" leftLinkBuy="/Buy"
                     rightBackImg={appleCardImg} rightImg={appleCard} rightDescr="Get 3% Daily Cash on purchases from
                     Apple using Apple Card." rightLinkMore="/appleCard" rightLinkBuy="/Buy" />
         </section>

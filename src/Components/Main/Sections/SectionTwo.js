@@ -10,8 +10,8 @@ function SectionTwo() {
     return (
         <section>
             <SectionProp leftBackImg={appleTvImg} leftImg={appleTv} leftDescr="Watch the trailer"
-            leftLinkMore="/tv" leftLinkBuy="/Buy"rightImg={servant} 
-            rightBackImg={servantImg} rightDescr= "AirPods Pro" rightLinkMore="/AirPods" rightLinkBuy="/Buy" />
+            leftLinkMore="/tv" leftLinkBuy="/Buy"
+            rightBackImg={servantImg} rightDescr= "AirPods Pro" rightLinkMore="/AirPods" color='white'font='large' rightLinkBuy="/Buy" />
         </section>
     )
 }

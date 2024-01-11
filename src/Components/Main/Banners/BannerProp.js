@@ -5,7 +5,11 @@ class BannerProp extends Component {
     return (
     <div>
         <div className="prod-name2 prod-name font-weight-bolder">
-            <h5 className="font-weight-bolder">{this.props.bannerName}</h5>
+            <h5 style={{
+                  fontSize: this.props.nameColor !== 'white' ? 'larger' : '',
+                  color: this.props.nameColor === 'white' ? 'white' : '',
+                  paddingTop: this.props.nameMargin === 'top' ? '50px' : ''
+                }} className="font-weight-bolder">{this.props.bannerName}</h5>
         </div>
         <div className="description2 text-white">
             <h4>{this.props.description}</h4>
